@@ -1,0 +1,273 @@
+Interface 
+---------
+
+
+-> A specification of method signatures
+
+-> Represents a pure-abstract class concept
+
+   Pure abstract class means - only abstract methods declaration are allowed
+   
+-> Syntatically similar to abstract class but it lacs instance variables
+
+-> Interface is declared using a keyword called "interface"
+
+
+Syntax:
+
+	[access-specifier] interface interfaceName{
+	
+	    List of abstract methods 
+		
+		List of default and static methods // This is valid since Java 8 
+	
+	}
+
+-> An interface can have only abstract methods
+
+
+  Ex:
+  
+  public interface CalculatorService{
+  
+    public abstract int add(int a,int b);
+	public int sub(int a,int b);
+	public int div(int a,int b);
+	public int mult(int a,int b);
+	
+  
+  }
+  
+
+-> Methods of interface are abstract by default 
+
+-> Interface cannot be instantiated
+
+
+-> A class cannot extend an interface it simply implements it
+
+
+-> An interface can extend one of more interfaces at a time
+
+
+
+  Ex:
+  
+  
+  interface A{}
+  
+  interface B{}
+  
+  interface C extends A,B{}
+
+Java supports multiple inheritance sort of concept through "interface"
+
+
+If a class implements an interface it must provide the implementation for all abstract methods 
+   defined in interface otherwise class itself should be declared as "abstract"
+   
+
+
+   -> If a class attempts to implement an interface it must override all abstract methods defined in 
+       interface 
+
+
+
+
+Can we declare variables in Java interface?
+
+
+YES - but these variables are public, static and "final" by default
+
+
+
+
+What is a final variable?
+
+
+A varaiable which can have a value that cannot be changed 
+
+-> This is like a constant variable in C and C++
+
+
+
+
+Java Collections
+----------------
+
+Array?
+
+-> Similar data 
+
+-> To store more than one element/item
+
+-> Fixed length
+
+-> Collection
+
+  Ex:
+  
+  int[] values = new int[4];
+  
+  
+  values = new int[10];
+
+
+Java Collection deal with objects only
+
+
+Collections are dynamically growable arrays
+
+
+
+
+Java Collections are implemented based on three core "Java interfaces" such as 
+  
+  
+   List
+   
+    -> An index based collection type which focuses on index and
+        accepts duplicates
+		
+		
+		10, 20, 30, 10 
+       	
+     
+   Set 
+   
+    -> A hash based collection which concentrates on hashing 
+       and does not accept duplicates
+
+
+       Kishore, Alex, Bob, Kishore, Mike	
+
+
+    -> Maintains unordered values	   
+   
+   
+   
+   Map
+
+	-> Maintains Key-Value pairs 
+	
+	-> Key is one object 
+	
+	-> Value is also an object
+
+    -> Key is always unique, value may be duplicated
+	
+
+
+
+
+ Implementation classes of "List interface"
+ -----------------------------------------
+ 
+   ArrayList 
+	
+	 -> Index based - this is good for "search/READ operations" but not good for more 
+	 			ADD, REMOVE operations
+     
+   
+   LinkedList 
+   
+     -> Node based collection - good for more ADD operations but not good for search operations
+   
+     -> Search opeations in LL is sequential so it takes more time to give the expected value
+   
+   Vector
+    
+     -> Similar to ArrayList but it is thread-safe (suitable for multithreading)
+	 
+	 -> Vector is synchronized 
+
+
+ 
+
+
+Implementation classes of "Set interface"
+------------------------------------------
+   
+   HashSet - Hash-based collection class which is unordered
+   
+           Input: 10, 20, 5, 100, 30
+		   
+		   Output: 5, 30, 20, 10, 100
+    
+   
+   
+   LinkedHashSet - Hash-based but maintains the elements based on 
+   
+					insertion order
+					
+					
+				Input: 10, 20, 5, 100, 30	
+				
+				Output: 10, 20, 5, 100, 30	
+   
+   
+   TreeSet : Ordered and Sorted Collection
+   
+   
+   
+			Input: 10, 20, 5, 100, 30
+			
+			Output: 5, 10, 20, 30, 100 - Returns values in Ascending order
+   
+   
+   
+   
+Implementation classes of "Map interface"
+-----------------------------------------
+
+
+   Hashtable 
+    
+	 -> Legacy based class - thread-safe - expensive	
+
+        Will have Unordered key objects
+			
+   HashMap 
+   
+     -> Not a thread-safe and light-weight, maintain key-value pairs
+	 
+	 -> Will have Unordered key objects 
+      
+	  
+   LinkedHashMap 
+   
+     -> Same as HashMap but maintain key objects in an insertion order
+   
+    
+   TreeMap -  Ordered and Sorted Collection but key - value pairs
+   
+		   -> Only key objects are sorted
+		   
+
+
+What is Auto-boxing?
+
+
+-> Process of converting a primitive into an object
+
+   //Integer i = new Integer(1000);
+   
+   Integer i = 1000;
+
+
+What is Auto-Unboxing?
+
+-> Process of converting an object into primitive
+
+
+   Integer i = 1000;
+   
+   
+   int j = i; // This is valid because of Auto-Unboxing
+   
+   
+   
+   
+
+
+

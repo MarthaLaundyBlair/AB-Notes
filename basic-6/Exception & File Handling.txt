@@ -1,0 +1,173 @@
+Exception Handling
+
+What is an Exception?
+
+-> A runtime error
+
+
+Clauses of Exception Handling
+-----------------------------
+
+1) try 
+
+   Program statements that are expected to throw exception should
+   be written in try block   
+
+2) catch 
+
+   Exceptions thrown by try block are sent to a "matching" catch block
+
+3) throw
+
+   To throw exceptions manually we use "throw" clause
+   
+   NOTE: By default JRE/JVM throws Exceptions implicitly
+   	
+
+4) throws 
+
+   -> this clause is used to indicate that a method may throw exception
+   
+   -> It is always a part of method declaration/definition (Worker)
+    
+
+5) finally / finally block
+
+   It is a guaranteed block which gets executed regardless of exception state 
+   
+	(Exception is Handled or Not)
+	
+	(Exception is raised or Not)
+
+
+
+
+ArithmeticException
+
+
+ArrayIndexOutOfBoundsException
+
+
+
+
+-> A try block can have more than one catch blocks (try - with multi-catch)
+
+
+
+-> Hierarchy of Exception classes
+   ------------------------------
+   
+Super class for all Java classes is "Object"
+
+
+Super class for all Java Exceptions is "Throwable"
+
+
+
+
+What are unchecked exceptions?
+
+-> These exceptions are unchecked by the compiler - which means your code need not handle 
+   these exceptions using try-catch block
+
+
+What are checked exceptions?
+
+-> These exceptions are checked by the compiler - which means your code must handle these
+   exceptions using try - catch block or declared to be thrown
+
+
+
+How can we create user-defined exceptions in Java?
+Steps involved in creating UD exceptions in Java?
+
+
+Step 1) Create an exception class by extending "Exception" (pre-defined class)
+
+
+Step 2) Declare a String variable which can an exception message
+
+
+Step 3) Write a parameterized constructor which takes String as an argument 
+
+
+Step 4) Override toString() method
+
+
+
+
+
+
+What is @Override?
+
+-> An pre-defined annotation which is used to indicate that 
+
+   a method is defined in a super type and subclass is overriding it
+
+
+
+
+
+
+
+
+
+
+File Handling
+-------------
+
+What is a File?
+
+-> Something stored on a disk 
+
+
+NOTE:
+
+In Java programming we should be able to create files, read and write content 
+  to and from files using set of classes and interfaces
+  
+  
+  
+NOTE: Java provides a package called "java.io" where most of the file handling classes 
+  and interfaces are defined/declared
+  
+  
+  
+NOTE: Java file handling classes are classified into two types 
+
+
+
+     1) Byte Stream Classes 
+
+        These classes deal with sequence of bytes
+		
+		Byte Stream classes do not support UNICODE
+		
+		
+
+     2) Character Stream classes	
+
+
+		These classes deal with sequence of characters 
+
+        These classes support UNICODE		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+String Handling

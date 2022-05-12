@@ -1,0 +1,121 @@
+What is Inheritance?
+
+-> A process of creating a new class from an existing class 
+
+-> Inheriting the attributes/properties/fields from a different class 
+
+-> Aquiring properties from a different class
+
+
+Types of Inheritance
+--------------------
+
+1) Single 
+
+2) Multi-level 
+
+   class A{
+   
+   
+   }
+   class B extends A{
+   
+   }
+   class C extends B{
+   
+   }
+   
+   
+3) Multiple - Java does not support this
+
+
+   class A {
+   
+	  int x;
+   }
+   
+   
+   class B {
+   
+      int x;
+   }
+   
+   class C extends A,B {
+   
+   
+   
+   }
+   
+   
+   NOTE: A class cannot extend more than once class
+   
+   
+4) Hybrid Inheritance - Combination of Multi-level and
+					multiple
+					
+	Java does not support this type 
+	
+	
+	class D {}
+	
+	class A {}
+   
+    class B extends A {}
+   
+    class C extends B,D {}
+
+
+
+5) Hierarchical Type  - Java Supports this type
+
+
+   class A {}
+   
+   class B extends A{
+   
+   }
+   class C extends A{
+   
+   
+   }
+   
+	
+
+
+What is an abstract class?
+
+-> A class with one or more abstract methods 
+   is called as abstract class
+   
+   
+   
+-> A class which has no complete implementation 
+  
+
+
+-> An abstract class can have abstract and concrete methods
+
+
+-> If a class extends an abstract class it must override all abstract methods 
+   defined in it's superclass
+   
+   
+-> Abstract cannot be instantiated
+
+
+   Example:
+   
+   Pet p1 = new Pet(); // Error
+
+  	
+
+
+
+   
+   
+   
+
+
+
+
+   

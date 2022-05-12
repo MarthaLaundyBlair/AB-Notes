@@ -1,0 +1,81 @@
+
+
+//Trello 
+
+JIRA - Work flow management system
+
+     - Project Management Tool 
+	  
+	 - Software Development Management Tool
+	 
+	 - JIRA can be used to create a backlog/tasks/issues/epics to be completed 
+	   based on the requirements gathered from clients
+	   
+	 - Used to visualize the work flow and the people who are working on specific tasks
+
+     - Keep track of tasks and understand the current state of project
+	 
+	 
+	 
+ In JIRA we can create various projects such as Software development, Service Management etc
+
+
+
+   In Software Development Project 
+
+      1) Kanban 
+	  
+			There is no fixed time bounds 
+			
+			
+			Here, we normall list out all backlogs/tasks in todo list 
+
+     
+      2) Scrum 
+	  
+	      There will be time bounds this is mainly helpful to complete the projects 
+		   in short term or incremental basis
+		   
+		   
+		  Time bounds mean - sprints (Each sprint may last for 2 weeks)
+		   
+		   
+	  
+ 
+      3) Bug Tracking 
+ 
+ 
+ 
+ 
+ 
+Functional Requirements 
+-----------------------
+
+
+The customer should be able to register 
+
+The customer should be able to login
+
+should be able to view profile
+
+should be able to browse products online 
+
+
+ 
+ 
+Based on the functional requirements listed above create user stories 
+
+
+As a customer I should be able to register online 
+
+As a customer I should be able to login
+
+
+
+Use cases 
+
+
+	 
+Confluence
+
+    - Used for documentation

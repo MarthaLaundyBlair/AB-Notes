@@ -1,0 +1,89 @@
+
+DAO - Data Access Object is responsible 
+      for interacting with database 
+	
+	- DAOs are represented by Java interfaces
+	
+	- Start creating a Java interface with 
+	  some business methods (STEP 1)
+	  
+	- A DAO interface may refer/use domain/model class like 
+	
+		Course
+		Customer
+		Product
+		Employee
+		Vehicle
+		Laptop
+		
+		
+	-> Deals with persistence logic 
+	
+STEP 2: 
+
+	Write implementation classe(s) for DAO interfaces by implementing all 
+	methods declared in DAO interface
+	
+	These classes may have database connection logic 
+	and transaction logic  (INSERT, UPDATE etc)
+	
+	Implimentation classes may also refer domain classes like "Course"
+	
+	-> Deals with persistence logic 
+	
+STEP 3:
+
+	Create controller class by introducing Has-a relationship 
+	between Controller and DAO
+	
+	Example:
+	
+	CourseController has CourseDAO
+	
+	
+	-> Controller classes may have one or more request 
+	  processing methods or mapping methods
+	  
+	  
+	  For examples:
+	  
+	  
+	  addCourse
+	  getAllCourses
+	  
+	  These methods communicate with the methods implemented 
+      in the implementation class of DAO interface	  
+	  
+
+
+STEP 4: Create a view layer
+
+	This layer or step represents a view layer which includes 
+	
+	presentation/UI logic
+	
+	A view layer may have dependency on a controller 
+	
+	For example:
+	
+	CourseView has a CourseController
+	
+	In this layer - We usually write methods that represents UI logic
+	
+	
+STEP 5: Create an entry/main/launcher class
+
+      Create minimum required objects and inject them where applicable 
+	  
+	  
+	  For example
+	  
+	  
+	   CourseDAO courseDAO = new CourseDAOImpl();
+	   
+	   The following statement injects/wires courseDAO into CourseController 
+	   This is called as Dependency Injection
+	   
+	   CourseController ctrl = new CourseController(courseDAO);
+
+

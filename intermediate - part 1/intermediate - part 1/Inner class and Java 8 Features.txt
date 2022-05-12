@@ -1,0 +1,112 @@
+What is an inner class?
+
+-> A class which is enclosed in an another class
+
+-> Inner class is also known as nested class
+
+
+Types of Inner classes
+----------------------
+
+1) Non-static inner class 
+
+
+2) Static Inner class 
+
+
+3) Anonymous Inner class 
+
+
+4) Local Inner class
+
+
+
+
+Java 8 Features
+---------------
+
+
+1) Functional Programming through lambda expression
+     or lamdba function or anonymous function
+	 
+	 
+	Benifits:
+	   
+	   -> Avoids boiler-plate 
+	   -> Makes your code more eligant and concise
+	   -> We can write first class function / Pure functions 
+		   Pure functions means a function with no side effects
+	   -> Deals with functions that never carry any state
+	   -> Encourage us to write declarative code (eligant and concise)
+	   -> Deals with functional interfaces
+	   
+	  
+
+  Vs Object Oriented Programming	  
+  
+  
+      -> May include more boiler-plate code
+	  
+	  -> May expose too much business logic
+	  
+	  -> Deals with objects where objects may have mutable state sometimes
+	  
+	  -> Mutable state of objects may lead to inconsistent results
+		   
+      -> Encourage us to write Imperative code (this reveals too much business logic) 
+	   
+
+
+
+
+What are the building blocks of a Java method?
+
+or 
+
+What is the syntax of Java method?
+
+
+1) Access Specifier/Modifier
+
+2) Return Type
+
+3) Method Name 
+
+4) Parameter-list
+
+5) Block of code
+
+
+NOTE: According to Lambda expression 1, 2, 3 are not allowed because all these are are inferred 
+			by Java programming system
+			
+	  
+	  It means a lambda expression will have parameter-list and block of code (4 and 5 from the above list) 
+
+
+
+    Syntax of Lambda expression/function
+	
+	
+	
+	[([parameter-list])] -> Block of code
+	
+	
+	
+	
+What is a functional interface in Java?
+
+-> An interface which defines one and only one abstract method
+
+Can we write more than one method in a functional interface?
+
+-> Yes it is possible but the methods have to be default or static methods
+
+
+
+	
+	
+	
+	
+	
+	

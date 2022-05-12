@@ -1,0 +1,156 @@
+Stack 
+  Stack is a memory location where all 
+  local variables/parameters of a methods reside
+	
+	
+Heap 
+	All Java object exist on Heap 
+	
+
+Garbage Collector (GC)
+
+	A tool which is responsible for removing unused objects from Heap
+	
+	
+	
+	
+	
+What is a method?
+
+-> A block of code which can be declared once and called many times 
+
+
+public static void main(String[] args){
+
+Syntax:
+
+   [access modifier] [Static modifier] <return type> methodName([parameter-list]){
+   
+	   // Body of the method
+   
+   }
+
+
+
+  Example:
+  
+  public void add(int a,int b){
+  
+	System.out.println( a + b );
+  }
+	
+	
+
+	
+What is a method call?
+
+-> A call to an existing method
+
+
+Syntax:
+
+  methodName([argument-list]);	
+
+ 
+  Example:
+  
+  add(10,20)
+
+  add(100,200);
+  
+  add(1000,2000);
+  
+  
+  
+  System.out.println();
+	
+	
+NOTE: Methods allow us to write re-usable code 
+
+Methods provide a way to write maintainable code
+  
+	
+
+
+What is a method overloading?
+
+-> When two or more methods have same name with different parameters is called as 
+   method overloading
+   
+   
+   Different parameter-list means 
+
+   1) Number of parameters should be different 
+   2) Datatypes of parameters should be different
+
+  Examples:
+
+  1)
+  void add(int a,int b){
+
+
+  }
+  
+  2)
+  
+  void add(double d1, double d2){
+  
+  }
+  
+  3)
+  void add(int a,int b, int c){
+  
+  
+  }
+  
+  4)
+  int add(int x, int y){
+  
+  
+  }
+  
+  
+  1 & 2 => Overloaded
+  
+  1 & 3 => Overloaded 
+  
+  1 & 4 => 
+  
+  
+
+  Best example:
+  
+  println() method in Java has been overloaded
+
+
+
+
+What is a constructor?
+
+-> A constructor method which is syntatically similar to method but
+    it lacs return type
+	
+-> Constructor will always have same name as class name in which it is declared
+
+
+-> This is invoked immediately upon creating of object
+
+
+-> Constructors can be overloaded
+
+
+What is an Encapsulation?
+
+-> A process of combining variables and methods into a logical unit (class)
+
+
+-> Encapsulation suggests that the variables should be declared as "private"
+
+   and methods as "public"
+
+   
+
+
+
+
+	

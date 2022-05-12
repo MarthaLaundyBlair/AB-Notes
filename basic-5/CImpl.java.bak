@@ -1,0 +1,27 @@
+public class CImpl implements C{
+ 
+ 
+   
+   public CImpl(){
+	   
+	  // To access variables of interface use "interface name"
+	  System.out.println(A.x); 
+	  System.out.println(B.x); 
+	  
+   }
+ 
+   public void getA(){
+	   System.out.println("A");
+   }
+   
+   public void getB(){
+	   
+	  System.out.println("B"); 
+   }
+   
+   public void getC(){
+	   
+	  System.out.println("C"); 
+   }
+
+}

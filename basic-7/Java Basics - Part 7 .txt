@@ -1,0 +1,86 @@
+String Handling in Java
+-----------------------
+
+What is String class? 
+
+-> An immutable class object -  means once a string class object 
+
+   is created it cannot be modified
+
+
+   String s1 = "hello";
+   
+   
+   s1.toUpperCase();
+   
+   
+   System.out.println(s1); // HELLO
+
+
+What is StringBuffer class?
+
+-> A mutable/changeable class object - means StringBuffer class object can be 
+    modified after creating
+
+-> We cannot use "string literals" to create StringBuffer Object
+
+
+-> StringBuffer is a thread-safe (suitable for multithreading) - Expensive
+
+
+NOTE: Since Java 7 we started using StringBuilder class which is an alternative to StringBuffer 
+
+
+
+ Example:
+ 
+    StringBuffer sb = new StringBuffer("hello");
+	
+	
+	sb.append(" Java");
+	
+	
+	System.out.println(sb); // hello Java 
+	
+	
+
+
+What is StringBuilder class?
+
+
+-> A mutable/changeable class similar to StringBuffer but StringBuilder is non-thread safe (Inexpensive)
+
+
+
+
+NOTE: This topic comes under Java IO / File Handling
+
+
+What is Serialization?
+
+
+-> A process of writing the state of an object (Java class object) into a byte stream or a file
+ 
+ 
+NOTE: Only the objects of classes that implement "Serializable" interface can be serialized
+ 
+    // This class cannot be Serialized
+    class Employee{
+	
+	}
+  
+    // This class can be serialized 
+	class Employee implements Serializable{
+	  
+	
+	}
+	
+ 
+
+What is De-Serialization?
+
+
+-> A process of reading the state of an object from a byte stream or a file
+
+
+

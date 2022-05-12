@@ -1,0 +1,160 @@
+What is a thread?
+
+-> A way to execute a program (Java program/application)
+
+
+What is multi-threading?
+
+
+-> A process of dividing a program into different small parts 
+
+   and running them concurrently 
+   
+   
+   Benifits:
+   
+   Improves the performance by utilizing the CPU time effectively
+   
+   Light-weight process
+   
+   Context switching is simple
+   
+   
+NOTE: Before you consider using multi-threading make sure you understanding the 
+      problem and system's hardware   
+   
+   
+How can we create threads in Java?
+
+-> 1) Creating a thread (class) by extending Thread class and override run() method
+
+-> 2) Creating a class by implementing Runnable interface and override run() method
+
+-> 3) Creating a class by implementing Callable interface and override call() method
+
+   
+
+NOTE: -> With Thread class "extends" is closed for future inheritance because 
+
+	   a Java class can extend one and only one class
+	   
+	  
+      -> With Runnable or  Callable interfaces "extends" is still open	because 
+
+      class implements one or more interfaces	  
+	   
+
+
+Can you list of some of the methods defined in Thread class?
+
+-> start()
+
+   run()
+   
+   setName 
+   
+   getName
+   
+   currentThread
+   
+   join 
+   
+   sleep
+   
+   setPriority 
+   
+   getPriority
+   
+   
+   
+What is a Thread life-cycle?
+
+See the picture
+
+
+What are thread priorities in Java?
+
+
+Thread priorities are in range 1 - 10
+
+
+    t1.setPriority(10); // MAX
+	
+	
+	t1.setPriority(1); // MIN
+	
+Default Priority of a Java thread is 5 	
+
+
+
+What is Race Condition in Multithreading?
+
+
+-> When two or more thread attempt to 
+   access a shared object/target then the 
+   thread may enter into a race condition
+	
+
+  NOTE: Race condition is one of the challenges 
+       associated with multi-threading
+
+
+
+  NOTE: To avoid race condition Java provides various options 
+        such as 
+		
+		
+		1) synchronized methods
+		
+		2) synchronized blocks
+		
+		3) Re-entrant locks 
+		
+		4) Atomic wrapper classes
+		
+		5) "volatile" keyword
+		
+
+
+
+Challenges associated with multithreading
+
+
+1) Race Condition 
+
+2) Starvation
+
+3) LiveLock
+
+4) Deadlock
+
+
+
+
+What is your understanding of Java 8 Streams?
+
+
+Streams are sequence of objects/values that can be filtered/manipulated/processed for
+business use-cases
+
+
+
+What is a Stream Pipeline?
+
+
+-> A Stream Pipeline includes 3 parts 
+
+
+   1) Data Source
+      
+	  A stream pipeline can have one and only one data source
+   
+   2) Intermediate Operations 
+   
+      Stream Pipeline can have ZERO or more intermediate operations
+   
+   
+   3) Terminal Operation
+    
+	  A stream pipeline can have one and only one terminal operations
+

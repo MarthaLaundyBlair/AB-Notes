@@ -1,0 +1,7 @@
+public interface A{
+	
+  int x; 	
+
+  public void getA();
+
+}

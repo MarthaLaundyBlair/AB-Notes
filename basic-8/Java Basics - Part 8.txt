@@ -1,0 +1,58 @@
+try - with resources 
+
+
+Java 7 introduced this concept by which the resources created in 
+  try(resources..........){
+  
+  }
+  
+  are closed implcitly/automatically so we don't need to write 
+  finally block
+  
+  
+  Resources like - file connection/stream or database connection 
+     or any closeable object
+	 
+Try-with resources is an alternative to "finally" block
+
+NOTE:
+
+Can we write a try block without catch block?
+
+Yes
+
+  Try block must have at lease one catch block or a finally block or try-with-resources
+
+
+
+Abstract class Vs Interface
+
+
+Interface - only abstract methods
+
+          - Allows us to implements a concept like multiple inheritance
+		  
+		  NOTE -> Interface is not suitable for variable re-usability 
+		  
+		          because variables of interface are "final"
+				  
+				  
+Abstract Class:
+
+        -> If there is a need of inheritance (variable re-usability)
+
+        -> If you need to write abstract and concrete methods 
+
+        -> If there is no need of multiple inheritance
+
+
+       NOTE: Once a class extends an abstract class it can no longer extend another class
+
+
+Interfaces are suitable for method re-usability
+
+Abstract class is mpre suitable for variable re-usability
+
+In real-world scenarios we use both because they both their own significance
+	   
+		  
