@@ -1,0 +1,179 @@
+Java Web Technologies
+---------------------
+
+Servlet API 
+
+JSP API - Java Server Pages
+
+JSF - Java Server Faces
+
+
+What is a website?
+
+-> A collection of webpages
+
+-> A website may have one or more webpages
+
+
+Types of websites?
+------------------
+
+1) Static
+
+	-> Non-Responsive
+	
+	-> Used to publish data/information
+	
+	-> Mainly used to adverts
+	
+	-> To build static websites we use 
+	
+		HTML & CSS
+	
+2) Dynamic
+
+
+    -> Responsive, because the content of dynamic websites is generated 
+	
+	   based on user interaction or input
+	   
+	   
+	Examples:
+	
+	   Online shopping application /eCommerce application 
+	   
+	   Online Banking application 
+	   
+	   
+	-> Used to trade online 
+
+
+    -> To build dynamic websites we use tools/tech stack 
+
+		Servlet & JSP API
+		
+		ASP - Active Server Pages
+		
+		PHP - Personal Home Page / Pre-processor Home Page
+
+        Django for Python Developers		
+		
+		
+	
+
+What is a Servlet?
+
+
+-> A servlet is a Java web component which can generate 
+   the dynamic content
+   
+   
+What is a Servlet API?
+
+-> An API which provides several classes and interfaces that help 
+   programmer to develop dynamic websites in Java domain   
+   
+   
+   
+How can we a new Servlet in Java?
+
+There are many ways to create servlets such as 
+
+
+  1) A servlet can be created by implementing an interface called "Servlet"
+     and override the methods of servlet interface
+	 
+	 Servlet interface is available in a package called "javax.servlet"	 
+	 
+  
+  2) Can be created by extending "GenericServlet" class 
+  
+  
+  3) Can be created by extending "HttpServlet" class (Recommended)
+  
+  
+  
+What is Servlet Lifecycle?
+
+
+Servlet lifecycle includes three methods (callback methods or lifecycle methods)  
+
+  1) init(ServletConfig config)
+	
+     -> This method is called when the servlet component is first loaded 
+
+     -> this method is used to initialize the servlet component	 
+	 
+	 -> init method is called only once
+  
+  
+  2) service(ServletRequest req, ServletResponse res)
+  
+	 -> This method is called everytime there is a new request from client/browser
+	 
+	 -> Execution per request
+	 
+  
+  3) destroy()
+  
+     -> This method is called just before the servlet (servlet object/instance) is removed from the
+	    container
+		
+		
+		
+
+Tools required to develop a dynamic website using Java Web Technologies
+-----------------------------------------------------------------------
+
+
+Java compatable IDE 
+
+	Eclipse 
+	
+	IntelliJ
+	
+	VS Code
+	
+	NetBeans
+	
+	
+Web Server/Application Server
+
+   Apache Tomcat
+   
+   
+NOTE: If you attempt to start Apache tomcat server through 
+       
+     ./bin folder and startup.bat file 
+	 
+	 
+	 And experience Tomcat window comes and disappears - you have to fix this
+	 
+
+    Create an Environment Variable called "JAVA_HOME"
+	
+	
+	JAVA_HOME = 
+	
+
+
+
+
+Servlets act as Controllers where all requests are processed and response is sent 
+   through either servlet itself (bad practice) 
+   or through HTML/JSP files (Good practice)
+   
+  
+Writing HTML code in Servlet makes the component/servlet more complex and not 
+	readable
+	
+	
+	
+ CREATE table student(
+					student_id int AUTO_INCREMENT PRIMARY KEY,
+					firstname varchar(20),
+					lastname varchar(20),
+					username varchar(20),
+					password varchar(20)
+
+					);	

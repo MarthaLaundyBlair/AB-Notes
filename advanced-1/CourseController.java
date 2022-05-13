@@ -32,5 +32,9 @@ public class CourseController{
 
   }	  
   
+  public Course getNamedCourse(String courseTitle){
+	  
+	  return this.courseDAO.findNamedCourse(courseTitle);
+  }
 
 }

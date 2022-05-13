@@ -57,7 +57,14 @@ public class CourseView{
 		
 		     loadAndDisplayCourses();
 			 break;
-		
+			 
+		case 3:
+			System.out.println("Enter Course Title ");
+			courseTitle = sc.nextLine();
+			  
+			displayCourseByTitle(courseTitle);
+			
+			
 		case 6:
 		    System.exit(0);
 		     
@@ -82,14 +89,21 @@ public class CourseView{
 	
 	System.out.println(result+" course added");
   }
-  
-  
+
   public void loadAndDisplayCourses(){
 	  
-	 List<Course> courseList = this.controller.getAllCourses();
-	 
-	 courseList.forEach(course -> System.out.println(course));
-	  
+	
+		 List<Course> courseList = this.controller.getAllCourses();
+		 
+		 courseList.forEach(course -> System.out.println(course));
+	
   }
   
+  public void displayCourseByTitle(String courseTitle){
+	  
+		System.out.println("testing");
+		 //List<Course> courseList = this.controller.getAllCourses();
+		 Course course = this.getNamedCourse(courseTitle);
+		 System.out.println(course);
+  }
 }

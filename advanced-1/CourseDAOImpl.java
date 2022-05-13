@@ -82,7 +82,26 @@ public class CourseDAOImpl implements CourseDAO{
 	   }
 	}
   
+	public Course findNamedCourse(String courseTitle){
+	   
+	   try{
+	   this.pst = this.con.prepareStatement("SELECT * FROM course WHERE course_title = ?");
+	    this.pst.setString(1, courseTitle);
+	   
+	   // executeQuery method is always used to execute SELECT command
+	   // executeQuery always returns a ResultSet object
+	   this.rs = this.pst.executeQuery();
+	   
+	  
+		course = new Course(this.rs.getInt("course_id"),this.rs.getString("course_title")); 
 
+	   return course;
+	   
+	   }
+	   catch(SQLException e){
+		 return null;
+	   }
+	}
     
 
 }
