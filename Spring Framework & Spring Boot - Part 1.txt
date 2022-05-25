@@ -1,0 +1,193 @@
+What is Spring Framework?
+
+-> It is a DI (Dependency Injection) tool 
+
+-> An application framework which makes the development of 
+	Java enterprise application is easier 
+	
+	
+-> It is also known as IoC (Inversion of Control) tool
+
+
+Why Spring Framework?
+
+
+An open-source and light-weight framework compare to other Java APIs we have
+
+
+Offers many modules that enable Java developers to build enterprise applications 
+	much quicker
+	
+	Spring Modules:
+		
+		Spring JDBC - It eliminates most of the boiler-plate code which we generally 
+			write in standard/conventional JDBC applications
+
+
+		Spring MVC - Supports an eligant way of building Java web applications
+		
+		
+		Spring Data JPA - Adds some extra abstraction layer where we don't have to 
+						write low-level (native) SQL queries or persistence logic
+			
+		
+		
+		Spring Core
+		
+		
+		Spring Beans
+		
+			   What is a Bean/Java Bean?
+			   
+					A component which represents a state of real-world object
+					
+					Model
+					
+					Domain class
+					
+					POJO class : Plain-Old-Java Object
+			   
+	           What is a Spring Bean?
+
+					Any Bean/component managed by Spring Framework is called as Spring Bean
+			    
+				    Spring can create Bean object and maintain it (Looks after overall life-cycle of a bean)
+					
+					
+					
+What is Spring Boot?
+
+
+Spring Boot is built on top of Spring Framework which means it supports all feature 
+	provided by Spring Framework and add some additional features like 
+	
+	-> Better Bootstrap - templating 
+		
+		
+	
+	-> Auto-configuration - Many configurations are automated by Spring Boot
+	
+	
+	
+	-> Provides an embedded web server - Tomcat or Jetty 
+	
+	
+
+
+Exporting/Distributing a Java application
+
+
+1) jar - Java Archive - Standalone applications
+
+2) war - Web Archive - Web Applications
+
+3) ear - Enterprise Archive - Enterprise Application
+
+
+
+
+
+What is auto-wiring?
+
+
+It is a process of Injecting an object into a field, constructor or setter
+
+
+This process is also called as Dependency Injection in an automated way using 
+			"@Autowired" annotation
+	
+
+  Types of ways to implement DI in Spring Framework
+  -------------------------------------------------
+  
+  
+  1) Field Injection (at variable level)
+  
+  
+  2) Constructor Injection (At constructor level)
+  
+  
+  3) Setter Injection - (At setter method level)
+  
+  
+  
+
+Demo 2
+--------
+Create Product class with a couple of fields
+
+	productId
+	productTitle
+	
+	Generate 
+	
+		Constructor with fields 
+		
+		Getters and Setters 
+		
+		toString
+		
+Create Order class with a couple of fields 
+
+	private int orderId
+	
+	@Autowired
+	private Product product;
+	
+	Generate 
+	
+		Constructor with fields 
+		
+		Getters and Setters 
+		
+		toString
+
+Create a Spring Configuration class by writing Spring Bean definitions for Order and Product classes
+
+Step 4:
+
+Go to run() in main class and create an ApplicationContext using AnnotationConfigApplicationContext
+
+
+Step 5
+
+
+We can now request Spring Framework to supply Order object using "getBean()" method
+
+
+
+
+
+What are the Bean scopes in Spring?
+
+
+-> Every bean definition created in Spring application will have 
+   a scope and it could be one of the following 
+   
+   
+   1) Singleton - (Default)
+   
+   
+   2) Prototype - Spring create a new object per request (getBean())
+   
+   -----------------------------------------------------------------------
+   
+   
+   3) request - Applicable in web applications only as part of Http Request 
+   
+   
+   4) session - Applicable in Java web application only as part of HttpSession 
+
+
+NOTE:By default Spring creates objects as "Singleton" based on the bean definitions 
+ written in Spring configuration class or Spring XML configuration
+ 
+ 
+ This means Spring supports two types of configurations 
+ 
+ 
+   1) Java-Based / Annotation based - Here we use @Bean 
+   
+   
+   2) XML based - Here we write bean definitions in XML files
+  
