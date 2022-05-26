@@ -1,0 +1,110 @@
+Spring MVC Vs Spring Boot MVC 
+
+In Spring MVC there is a need of configuration 
+files such as 
+
+	1) web.xml (Deployment Descriptor)
+
+
+    2) applicationContext.xml (Context file that shows 
+		the location of views (JSPs, HTML, CSS and JS)/static resources
+	
+    ----------------------------------------------------------------------------	
+		
+	3) Bean configuration file if required (XML or Annotation-based/Java based)
+	
+		
+    4) If MVC application requires to communite with a datasource/database then there is a need 
+	   a configuration file/settings that enable database connection etc
+	   
+	   
+Spring Boot
+
+	-> There is no need of writing above 1) and 2) configurations in XML or Java 
+	
+		Spring Boot reads pom.xml file for "spring-boot-starter-web" dependency, once it finds this
+		dependency it just enable auto-configuration for (1)
+		
+		
+		Spring Boot reads "application.properties" and creates configurations for views, database connections 
+		server configuratations (such as server name, port number  .....) - so we can avoid following above (2) and (4)
+		
+		
+		Spring Boot also embeds a web server (Tomcat or Jetty)
+	
+	   
+	-> Magical auto-configurations 
+	
+
+STS - Spring Tool Suite 4
+
+	- Built on top of Eclipse 
+	
+	- Mainly used to develop Spring Applications such as 
+	
+		Spring Legacy Project
+		
+		Spring Starter Project - Spring Boot
+		
+	- Comes with tomcat server - by default
+	
+	
+	- AKA STS-Bundle which comes with all features provided by Eclipse IDE
+	  and some addition template projects such as Spring Legacy Project
+		Spring MVC Project 
+		Simple Spring Maven project
+
+
+
+
+
+
+Spring Data JPA Module:
+
+	-> This module is generally compared with Spring Data JDBC module
+	
+	
+	-> Spring Data JPA adds more abstract layer by which the Java developers 
+	   can avoid creating DAO interfaces and their implementation classes
+	   
+	   
+	-> Data JPA modules provides some pre-defined Java interfaces such as 
+	
+		1) Repository 
+				
+		2) CrudRepository
+		
+		3) PagingAndSortingRepository 
+		
+		4) JpaRepository
+		
+		
+		
+		
+		Repository 
+			|
+	  CrudRepository	
+	        |
+	   PagingAndSortingRepository
+
+
+
+    JpaRepository extends both CrudRepository (Indirectly) and PagingAndSortingRepository
+  
+  
+	public interface Repository {}
+
+		
+	public interface CrudRepository extends Repository {}   
+	
+	public interface PagingAndSortingRepository extends CrudRepository {}   
+	
+	public interface JpaRepository extends PagingAndSortingRepository {}  
+		
+		
+		
+		
+		
+		
+		
+
