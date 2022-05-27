@@ -1,0 +1,231 @@
+Sessions in Spring or Spring Boot
+
+-> Sessions are implemented in Spring application
+
+   using an annotation called "@SessionAttributes"
+   
+   We usually use @SessionAttributes at controller class level
+
+   @SessionAttributes can hold one or more session variables/attributes that 
+   can be throughout the session
+	
+	
+JPA Query Patterns or Methods
+
+
+What is a web application?
+
+-> An application running on a server and available over the internet
+
+-> Designed for user consumption it means the response of an application is sent directly 
+	to end-user (client/browser)
+
+
+Web Services
+
+
+What is a Web Service?
+
+-> A service available over the internet
+
+
+-> Web services are responsible for generating/supply data to other applications such as 
+
+	web applications/Mobile application
+	
+	
+	-> This means web service is for application consumption
+	
+What is an API (Application Programming Interface)?
+
+  -> A mediator between applications 
+  
+     One application can communicate with another application 
+	 using an API
+	 
+	 
+	 
+Types of Web Services
+---------------------
+
+  1) SOAP Based 
+  
+  
+  2) RESTful Web Services
+
+
+
+
+  SOAP (Simple Object Access Protocol) Based Web Services
+  
+  This type of web service replies on SOAP protocol where there 
+  is a need of following some strict rules
+  
+  
+  The response of SOAP based service is always in XML format 
+  which expects some supporting XML parsers at the client-side
+  
+  
+  XML : eXtensible Markup language which generally used to 
+        distribute data
+		
+		
+		Examples:
+		
+		
+		<employees> <!-- Root Element -->
+		
+		
+			<employee id=1> 
+				<employee-name> Kishore</employee-name>
+			</employee>
+			
+			
+			
+			<employee id=2> 
+				<employee-name> Tom </employee-name>
+			</employee>
+		
+		
+	    </employees> <!-- Closing tag of root -->
+  
+  
+   A SOAP based service will have 3 main components
+   
+   1) Envelop
+   
+   2) Header
+   
+   3) Body - Actual message
+
+
+  SOAP based services are heavy-weight
+  
+  
+  
+ What is WSDL (Web Service Description Language)?
+ 
+ It is mainly used in SOAP based web services to describe the details of service such as 
+ 
+ name 
+ 
+ location
+ 
+ datatypes - for input and output 
+ 
+ Actual messages
+ 
+ The above details are stored in XML format
+ 
+  
+  
+  RESTful Web Services:
+  
+  
+  -> RESTful web services do not follow any prescribed roles/protocols because 
+  
+	 RESTful web services are referred as architectural pattern
+	 
+  -> The response of RESTful services can be in text, XML, JSON etc	 
+  
+   
+  -> Majority of RESTful web services send response in the form JSON 
+  
+	 
+	 (JavaScript Object Notation) - Represents data in the form of Key-Value pairs
+	 
+	 {
+	 	"id" : 1,
+		"name" : "Kishore"
+	 }
+	 
+  -> REST (Representation State Transfer)	 
+	 
+	 
+  -> RESTful services are light-weight
+  
+  
+  -> Requests to a RESTful is sent through HTTP protocol
+  
+  
+     HTTP - Hyper Text Transfer Protocol
+	 
+	      This protocol is used by client-side applications (browser) or HTTP client application 
+		  to communicate web server
+		
+  
+  
+  
+  
+  Save Customer 
+  
+  {
+   "customerId": 1, 
+   "customerName" : "Kishore",
+   "customerEmail" : "kpashindla@gmail.com",
+   "contactNumber" : "073737373737"
+ }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+   	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microservices
+
+   Dividing a huge application into small parts/services (applications)
+   
+   and deploying them on different servers
+   
+   Each application or service can communicate with other services using 
+   
+   appropriate URLs 
+   
+   
+   There is a possibility of communication challenges in Microservices especially 
+   when the number of services/application increase
+   
+   Because it would be difficult to locate the service location/IP address and path etc
+   
+   
+   We have Netflix Eureka Server which can provide an efficient service 
+   discovery and communication
+   
+   
+
+
+
+
+
+
+
+
+
+
+
