@@ -1,0 +1,136 @@
+What is unit testing?
+
+A process of testing a small piece of code for checking whether code 
+gives expected output or not based on given input
+
+
+A piece of code could be a Java method or query or an object itself
+
+
+How can we conduct unit testing in Java?
+
+
+Unit testing in Java is done using a framework/library called "jUnit"
+
+
+Types of Versions
+
+
+JUnit 3 
+
+JUnit 4 
+
+JUnit 5 - Current/most popular one because it is compatible with Java 8 or later
+
+	   - jUnit 5 is not a unit testing framework but it is an API which is a light-weight
+	   
+	   
+		
+		Your code <-> jUnit5 API <-> Unit Testing Framework
+		
+		
+		
+       - jUnit5 API provides several classes, interfaces, methods and annotations that are compatible 
+	     with Java 8 or later
+		 
+		 
+
+What is a Black-box-Testing?
+
+
+In this testing there is no visibility of actual code
+
+Testers use a UI/User Interface to conduct testing by giving sample input and verify
+the actual output
+
+
+Example: User Acceptance Test
+
+
+What is a White-box-Testing?
+
+
+In this testing code is clearly visible to the testers 
+
+Developers conduct this testing because they have access to actual source 
+code
+
+
+Here, unit testing is one of the examples of white-box testing
+
+
+
+Unit Testing - Characteristics
+------------------------------
+
+FIRST
+
+F - Fast
+
+I - Independent/Isolation code
+
+R - Repeatable (means tests are executed at Dev state, UAT stage, Prod Stage)
+
+S - Self-Validating - means test must result either passing or failing
+
+T - Timely - Means testing done before code or after
+
+
+	Traditionally - Application code is written first and tested (unit testing) it at later stage
+	
+	
+	Modern / Test Driven Development (TDD) - Write Test First & Code Later
+	
+	
+	Achieving the code coverage (% of code which is being testing) - 90% is easy
+	
+	
+    TDD is possible with a adding new feature or building application from scratch
+	
+	
+	With TDD we write code in incremental (small iterative code blocks) which ensures
+	quality in the code base and also determine bugs early and fix quickly
+	
+	
+	Golden-Suggestion
+	
+		-> Test little - code little
+		
+		
+	
+	
+
+What is TDD Life-Cycle?
+
+
+RED - In TDD we start with a failing
+
+GREEN - Write relavent code to make the test pass
+
+		In this process we may end-up writing complex code
+			Redundant code
+		
+
+REFACTOR - A process of changing the code without changing the functionality of application
+
+		 - In this process we may aiming at elimiting the redundancy
+
+
+
+
+What is the purpose of unit testing?
+
+
+-> Automation - To implement automated testing we use unit testing
+
+
+
+Testings are classfied into two types 
+
+	1) Manual Testing 
+	
+		Error prone 
+		Difficult to test code with good coverage
+	
+	
+	2) Automated - Unit testing
